@@ -5,6 +5,8 @@ Every time you copy something in the macOS system clipboard, your pasteboard his
 
 Flycut Touch is an extension/branch upon [Flycut](https://github.com/TermiT/Flycut), which is a clean and simple clipboard manager for developers. Flycut is based on an open source app called Jumpcut.
 
+![Photo Demo](https://playr.app/downloads/touchscroll.jpg)
+
 ••••••••••••••••••••••••••••••••••••••••••••••••••••
 ### App Details
 
