@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		773ABFB113E9AA1A00AE3969 /* NSWindow+TrueCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 773ABFAF13E9AA1A00AE3969 /* NSWindow+TrueCenter.h */; };
+		773ABFB213E9AA1A00AE3969 /* NSWindow+TrueCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 773ABFB013E9AA1A00AE3969 /* NSWindow+TrueCenter.m */; };
+		7761C885139BDE94000FB3AB /* LoginItemsAE.c in Sources */ = {isa = PBXBuildFile; fileRef = 7761C881139BDE94000FB3AB /* LoginItemsAE.c */; };
+		7761C886139BDE94000FB3AB /* LoginItemsAE.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C882139BDE94000FB3AB /* LoginItemsAE.h */; };
+		7761C887139BDE94000FB3AB /* UKLoginItemRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C883139BDE94000FB3AB /* UKLoginItemRegistry.h */; };
+		7761C888139BDE94000FB3AB /* UKLoginItemRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761C884139BDE94000FB3AB /* UKLoginItemRegistry.m */; };
+		7761C890139BDEAF000FB3AB /* BezelWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C88A139BDEAF000FB3AB /* BezelWindow.h */; };
+		7761C891139BDEAF000FB3AB /* BezelWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761C88B139BDEAF000FB3AB /* BezelWindow.m */; };
+		7761C892139BDEAF000FB3AB /* RoundRecBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C88C139BDEAF000FB3AB /* RoundRecBezierPath.h */; };
+		7761C893139BDEAF000FB3AB /* RoundRecBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761C88D139BDEAF000FB3AB /* RoundRecBezierPath.m */; };
+		7761C894139BDEAF000FB3AB /* RoundRecTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C88E139BDEAF000FB3AB /* RoundRecTextField.h */; };
+		7761C895139BDEAF000FB3AB /* RoundRecTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761C88F139BDEAF000FB3AB /* RoundRecTextField.m */; };
+		7761C899139BDEC4000FB3AB /* UKPrefsPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C897139BDEC4000FB3AB /* UKPrefsPanel.h */; };
+		7761C89A139BDEC4000FB3AB /* UKPrefsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761C898139BDEC4000FB3AB /* UKPrefsPanel.m */; };
+		7761C8AA139BDF12000FB3AB /* SRCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C89E139BDF12000FB3AB /* SRCommon.h */; };
+		7761C8AB139BDF12000FB3AB /* SRCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761C89F139BDF12000FB3AB /* SRCommon.m */; };
+		7761C8AC139BDF12000FB3AB /* SRKeyCodeTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C8A0139BDF12000FB3AB /* SRKeyCodeTransformer.h */; };
+		7761C8AD139BDF12000FB3AB /* SRKeyCodeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761C8A1139BDF12000FB3AB /* SRKeyCodeTransformer.m */; };
+		7761C8AE139BDF12000FB3AB /* SRRecorderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C8A2139BDF12000FB3AB /* SRRecorderCell.h */; };
+		7761C8AF139BDF12000FB3AB /* SRRecorderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761C8A3139BDF12000FB3AB /* SRRecorderCell.m */; };
+		7761C8B0139BDF12000FB3AB /* SRRecorderControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C8A4139BDF12000FB3AB /* SRRecorderControl.h */; };
+		7761C8B1139BDF12000FB3AB /* SRRecorderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761C8A5139BDF12000FB3AB /* SRRecorderControl.m */; };
+		7761C8B2139BDF12000FB3AB /* SRValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7761C8A6139BDF12000FB3AB /* SRValidator.h */; };
+		7761C8B3139BDF12000FB3AB /* SRValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7761C8A7139BDF12000FB3AB /* SRValidator.m */; };
+		7761C8DB139BE06B000FB3AB /* com.generalarcade.flycut.16.png in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8CD139BE06B000FB3AB /* com.generalarcade.flycut.16.png */; };
+		7761C8DC139BE06B000FB3AB /* com.generalarcade.flycut.32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8CE139BE06B000FB3AB /* com.generalarcade.flycut.32.png */; };
+		7761C8DF139BE06B000FB3AB /* jumpcut.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8D1139BE06B000FB3AB /* jumpcut.icns */; };
+		7761C8E0139BE06B000FB3AB /* net.sf.jumpcut.ghost_scissors_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8D2139BE06B000FB3AB /* net.sf.jumpcut.ghost_scissors_small.png */; };
+		7761C8E1139BE06B000FB3AB /* net.sf.jumpcut.preferences.acknowledgements.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8D3139BE06B000FB3AB /* net.sf.jumpcut.preferences.acknowledgements.tiff */; };
+		7761C8E2139BE06B000FB3AB /* net.sf.jumpcut.preferences.appearance.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8D4139BE06B000FB3AB /* net.sf.jumpcut.preferences.appearance.tiff */; };
+		7761C8E3139BE06B000FB3AB /* net.sf.jumpcut.preferences.general.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8D5139BE06B000FB3AB /* net.sf.jumpcut.preferences.general.tiff */; };
+		7761C8E4139BE06B000FB3AB /* net.sf.jumpcut.preferences.hotkey.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8D6139BE06B000FB3AB /* net.sf.jumpcut.preferences.hotkey.tiff */; };
+		7761C8E5139BE06B000FB3AB /* net.sf.jumpcut.scissors_bw16.png in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8D7139BE06B000FB3AB /* net.sf.jumpcut.scissors_bw16.png */; };
+		7761C8E6139BE06B000FB3AB /* RemoveShortcut.tif in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8D8139BE06B000FB3AB /* RemoveShortcut.tif */; };
+		7761C8E7139BE06B000FB3AB /* RemoveShortcutPressed.tif in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8D9139BE06B000FB3AB /* RemoveShortcutPressed.tif */; };
+		7761C8E8139BE06B000FB3AB /* RemoveShortcutRollover.tif in Resources */ = {isa = PBXBuildFile; fileRef = 7761C8DA139BE06B000FB3AB /* RemoveShortcutRollover.tif */; };
+		7794D3D5139BF28B0047E862 /* flycut.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7794D3D4139BF28B0047E862 /* flycut.icns */; };
+		77A4F3AD139BD72300F39666 /* SGHotKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A4F3A5139BD72300F39666 /* SGHotKey.h */; };
+		77A4F3AE139BD72300F39666 /* SGHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A4F3A6139BD72300F39666 /* SGHotKey.m */; };
+		77A4F3AF139BD72300F39666 /* SGHotKeyCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A4F3A7139BD72300F39666 /* SGHotKeyCenter.h */; };
+		77A4F3B0139BD72300F39666 /* SGHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A4F3A8139BD72300F39666 /* SGHotKeyCenter.m */; };
+		77A4F3B1139BD72300F39666 /* SGKeyCodeTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A4F3A9139BD72300F39666 /* SGKeyCodeTranslator.h */; };
+		77A4F3B2139BD72300F39666 /* SGKeyCodeTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A4F3AA139BD72300F39666 /* SGKeyCodeTranslator.m */; };
+		77A4F3B3139BD72300F39666 /* SGKeyCombo.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A4F3AB139BD72300F39666 /* SGKeyCombo.h */; };
+		77A4F3B4139BD72300F39666 /* SGKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A4F3AC139BD72300F39666 /* SGKeyCombo.m */; };
+		77DA6B921CB9549B0077917F /* FlycutStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DA6B8E1CB9549B0077917F /* FlycutStore.m */; };
+		77DA6B931CB9549B0077917F /* FlycutStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 77DA6B8F1CB9549B0077917F /* FlycutStore.h */; };
+		77DA6B941CB9549B0077917F /* FlycutClipping.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DA6B901CB9549B0077917F /* FlycutClipping.m */; };
+		77DA6B951CB9549B0077917F /* FlycutClipping.h in Headers */ = {isa = PBXBuildFile; fileRef = 77DA6B911CB9549B0077917F /* FlycutClipping.h */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		8D2E28861B0669F500AE62C8 /* com.generalarcade.flycut.black.16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E28821B0669F500AE62C8 /* com.generalarcade.flycut.black.16.png */; };
+		8D2E28871B0669F500AE62C8 /* com.generalarcade.flycut.black.32.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E28831B0669F500AE62C8 /* com.generalarcade.flycut.black.32.png */; };
+		8D2E28881B0669F500AE62C8 /* com.generalarcade.flycut.xout.16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E28841B0669F500AE62C8 /* com.generalarcade.flycut.xout.16.png */; };
+		8D2E28891B0669F500AE62C8 /* com.generalarcade.flycut.xout.32.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2E28851B0669F500AE62C8 /* com.generalarcade.flycut.xout.32.png */; };
+		AABE497C09FF9CD000A6A239 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = AABE497B09FF9CD000A6A239 /* AppController.m */; };
+		AAFAC85F0A1BD9DD00DC6025 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFAC84A0A1BD9DD00DC6025 /* Carbon.framework */; };
+		C6C2A9B321D9F679004C5998 /* TouchBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C2A9B121D9F679004C5998 /* TouchBarController.h */; };
+		C6C2A9B421D9F679004C5998 /* TouchBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C2A9B221D9F679004C5998 /* TouchBarController.m */; };
+		C6C2A9B621D9F707004C5998 /* TouchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C2A9B521D9F707004C5998 /* TouchBar.h */; };
+		C6C2A9B921D9F71B004C5998 /* LICENSE-TouchBaer in Resources */ = {isa = PBXBuildFile; fileRef = C6C2A9B721D9F71A004C5998 /* LICENSE-TouchBaer */; };
+		C6C2A9BE21D9F877004C5998 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C2A9BD21D9F877004C5998 /* DFRFoundation.framework */; };
+		C6C2A9C121D9FFA2004C5998 /* NSButton+Property.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C2A9BF21D9FFA1004C5998 /* NSButton+Property.h */; };
+		C6C2A9C221D9FFA2004C5998 /* NSButton+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C2A9C021D9FFA1004C5998 /* NSButton+Property.m */; };
+		C6C2A9C521DA0743004C5998 /* LICENSE-chrisgalz in Resources */ = {isa = PBXBuildFile; fileRef = C6C2A9C421DA0743004C5998 /* LICENSE-chrisgalz */; };
+		DBEB0C9C1442F2AE0080D24E /* NSWindow+ULIZoomEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = DBEB0C9A1442F2AE0080D24E /* NSWindow+ULIZoomEffect.h */; };
+		DBEB0C9D1442F2AE0080D24E /* NSWindow+ULIZoomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEB0C9B1442F2AE0080D24E /* NSWindow+ULIZoomEffect.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Flycut_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flycut_Prefix.pch; sourceTree = "<group>"; };
+		773ABFAF13E9AA1A00AE3969 /* NSWindow+TrueCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+TrueCenter.h"; sourceTree = "<group>"; };
+		773ABFB013E9AA1A00AE3969 /* NSWindow+TrueCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+TrueCenter.m"; sourceTree = "<group>"; };
+		7761C881139BDE94000FB3AB /* LoginItemsAE.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LoginItemsAE.c; sourceTree = "<group>"; };
+		7761C882139BDE94000FB3AB /* LoginItemsAE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginItemsAE.h; sourceTree = "<group>"; };
+		7761C883139BDE94000FB3AB /* UKLoginItemRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKLoginItemRegistry.h; sourceTree = "<group>"; };
+		7761C884139BDE94000FB3AB /* UKLoginItemRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKLoginItemRegistry.m; sourceTree = "<group>"; };
+		7761C88A139BDEAF000FB3AB /* BezelWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezelWindow.h; sourceTree = "<group>"; };
+		7761C88B139BDEAF000FB3AB /* BezelWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezelWindow.m; sourceTree = "<group>"; };
+		7761C88C139BDEAF000FB3AB /* RoundRecBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundRecBezierPath.h; sourceTree = "<group>"; };
+		7761C88D139BDEAF000FB3AB /* RoundRecBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundRecBezierPath.m; sourceTree = "<group>"; };
+		7761C88E139BDEAF000FB3AB /* RoundRecTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundRecTextField.h; sourceTree = "<group>"; };
+		7761C88F139BDEAF000FB3AB /* RoundRecTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundRecTextField.m; sourceTree = "<group>"; };
+		7761C897139BDEC4000FB3AB /* UKPrefsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKPrefsPanel.h; sourceTree = "<group>"; };
+		7761C898139BDEC4000FB3AB /* UKPrefsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKPrefsPanel.m; sourceTree = "<group>"; };
+		7761C89E139BDF12000FB3AB /* SRCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommon.h; sourceTree = "<group>"; };
+		7761C89F139BDF12000FB3AB /* SRCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommon.m; sourceTree = "<group>"; };
+		7761C8A0139BDF12000FB3AB /* SRKeyCodeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKeyCodeTransformer.h; sourceTree = "<group>"; };
+		7761C8A1139BDF12000FB3AB /* SRKeyCodeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKeyCodeTransformer.m; sourceTree = "<group>"; };
+		7761C8A2139BDF12000FB3AB /* SRRecorderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderCell.h; sourceTree = "<group>"; };
+		7761C8A3139BDF12000FB3AB /* SRRecorderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderCell.m; sourceTree = "<group>"; };
+		7761C8A4139BDF12000FB3AB /* SRRecorderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderControl.h; sourceTree = "<group>"; };
+		7761C8A5139BDF12000FB3AB /* SRRecorderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderControl.m; sourceTree = "<group>"; };
+		7761C8A6139BDF12000FB3AB /* SRValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRValidator.h; sourceTree = "<group>"; };
+		7761C8A7139BDF12000FB3AB /* SRValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRValidator.m; sourceTree = "<group>"; };
+		7761C8CD139BE06B000FB3AB /* com.generalarcade.flycut.16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = com.generalarcade.flycut.16.png; path = Resources/com.generalarcade.flycut.16.png; sourceTree = "<group>"; };
+		7761C8CE139BE06B000FB3AB /* com.generalarcade.flycut.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = com.generalarcade.flycut.32.png; path = Resources/com.generalarcade.flycut.32.png; sourceTree = "<group>"; };
+		7761C8D1139BE06B000FB3AB /* jumpcut.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = jumpcut.icns; path = Resources/jumpcut.icns; sourceTree = "<group>"; };
+		7761C8D2139BE06B000FB3AB /* net.sf.jumpcut.ghost_scissors_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = net.sf.jumpcut.ghost_scissors_small.png; path = Resources/net.sf.jumpcut.ghost_scissors_small.png; sourceTree = "<group>"; };
+		7761C8D3139BE06B000FB3AB /* net.sf.jumpcut.preferences.acknowledgements.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = net.sf.jumpcut.preferences.acknowledgements.tiff; path = Resources/net.sf.jumpcut.preferences.acknowledgements.tiff; sourceTree = "<group>"; };
+		7761C8D4139BE06B000FB3AB /* net.sf.jumpcut.preferences.appearance.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = net.sf.jumpcut.preferences.appearance.tiff; path = Resources/net.sf.jumpcut.preferences.appearance.tiff; sourceTree = "<group>"; };
+		7761C8D5139BE06B000FB3AB /* net.sf.jumpcut.preferences.general.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = net.sf.jumpcut.preferences.general.tiff; path = Resources/net.sf.jumpcut.preferences.general.tiff; sourceTree = "<group>"; };
+		7761C8D6139BE06B000FB3AB /* net.sf.jumpcut.preferences.hotkey.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = net.sf.jumpcut.preferences.hotkey.tiff; path = Resources/net.sf.jumpcut.preferences.hotkey.tiff; sourceTree = "<group>"; };
+		7761C8D7139BE06B000FB3AB /* net.sf.jumpcut.scissors_bw16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = net.sf.jumpcut.scissors_bw16.png; path = Resources/net.sf.jumpcut.scissors_bw16.png; sourceTree = "<group>"; };
+		7761C8D8139BE06B000FB3AB /* RemoveShortcut.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = RemoveShortcut.tif; path = Resources/RemoveShortcut.tif; sourceTree = "<group>"; };
+		7761C8D9139BE06B000FB3AB /* RemoveShortcutPressed.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = RemoveShortcutPressed.tif; path = Resources/RemoveShortcutPressed.tif; sourceTree = "<group>"; };
+		7761C8DA139BE06B000FB3AB /* RemoveShortcutRollover.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = RemoveShortcutRollover.tif; path = Resources/RemoveShortcutRollover.tif; sourceTree = "<group>"; };
+		7761C8EB139BE09D000FB3AB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7794D3D4139BF28B0047E862 /* flycut.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = flycut.icns; sourceTree = "<group>"; };
+		7794D3D6139BF2B10047E862 /* flycut.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = flycut.icns; sourceTree = "<group>"; };
+		77A4F3A5139BD72300F39666 /* SGHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHotKey.h; sourceTree = "<group>"; };
+		77A4F3A6139BD72300F39666 /* SGHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHotKey.m; sourceTree = "<group>"; };
+		77A4F3A7139BD72300F39666 /* SGHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHotKeyCenter.h; sourceTree = "<group>"; };
+		77A4F3A8139BD72300F39666 /* SGHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHotKeyCenter.m; sourceTree = "<group>"; };
+		77A4F3A9139BD72300F39666 /* SGKeyCodeTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGKeyCodeTranslator.h; sourceTree = "<group>"; };
+		77A4F3AA139BD72300F39666 /* SGKeyCodeTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGKeyCodeTranslator.m; sourceTree = "<group>"; };
+		77A4F3AB139BD72300F39666 /* SGKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGKeyCombo.h; sourceTree = "<group>"; };
+		77A4F3AC139BD72300F39666 /* SGKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGKeyCombo.m; sourceTree = "<group>"; };
+		77DA6B8E1CB9549B0077917F /* FlycutStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlycutStore.m; path = FlycutEngine/FlycutStore.m; sourceTree = SOURCE_ROOT; };
+		77DA6B8F1CB9549B0077917F /* FlycutStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlycutStore.h; path = FlycutEngine/FlycutStore.h; sourceTree = SOURCE_ROOT; };
+		77DA6B901CB9549B0077917F /* FlycutClipping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlycutClipping.m; path = FlycutEngine/FlycutClipping.m; sourceTree = SOURCE_ROOT; };
+		77DA6B911CB9549B0077917F /* FlycutClipping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlycutClipping.h; path = FlycutEngine/FlycutClipping.h; sourceTree = SOURCE_ROOT; };
+		8D1107320486CEB800E47090 /* Flycut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flycut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D2E28821B0669F500AE62C8 /* com.generalarcade.flycut.black.16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = com.generalarcade.flycut.black.16.png; path = Resources/com.generalarcade.flycut.black.16.png; sourceTree = "<group>"; };
+		8D2E28831B0669F500AE62C8 /* com.generalarcade.flycut.black.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = com.generalarcade.flycut.black.32.png; path = Resources/com.generalarcade.flycut.black.32.png; sourceTree = "<group>"; };
+		8D2E28841B0669F500AE62C8 /* com.generalarcade.flycut.xout.16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = com.generalarcade.flycut.xout.16.png; path = Resources/com.generalarcade.flycut.xout.16.png; sourceTree = "<group>"; };
+		8D2E28851B0669F500AE62C8 /* com.generalarcade.flycut.xout.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = com.generalarcade.flycut.xout.32.png; path = Resources/com.generalarcade.flycut.xout.32.png; sourceTree = "<group>"; };
+		AABE497A09FF9CD000A6A239 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		AABE497B09FF9CD000A6A239 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		AAFAC84A0A1BD9DD00DC6025 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		C6C2A9B121D9F679004C5998 /* TouchBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBarController.h; sourceTree = "<group>"; };
+		C6C2A9B221D9F679004C5998 /* TouchBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchBarController.m; sourceTree = "<group>"; };
+		C6C2A9B521D9F707004C5998 /* TouchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchBar.h; sourceTree = "<group>"; };
+		C6C2A9B721D9F71A004C5998 /* LICENSE-TouchBaer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENSE-TouchBaer"; sourceTree = "<group>"; };
+		C6C2A9BC21D9F720004C5998 /* README-TouchBaer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README-TouchBaer.md"; sourceTree = "<group>"; };
+		C6C2A9BD21D9F877004C5998 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DFRFoundation.framework; sourceTree = "<group>"; };
+		C6C2A9BF21D9FFA1004C5998 /* NSButton+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSButton+Property.h"; sourceTree = "<group>"; };
+		C6C2A9C021D9FFA1004C5998 /* NSButton+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSButton+Property.m"; sourceTree = "<group>"; };
+		C6C2A9C421DA0743004C5998 /* LICENSE-chrisgalz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENSE-chrisgalz"; sourceTree = "<group>"; };
+		DBEB0C9A1442F2AE0080D24E /* NSWindow+ULIZoomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+ULIZoomEffect.h"; sourceTree = "<group>"; };
+		DBEB0C9B1442F2AE0080D24E /* NSWindow+ULIZoomEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+ULIZoomEffect.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				C6C2A9BE21D9F877004C5998 /* DFRFoundation.framework in Frameworks */,
+				AAFAC85F0A1BD9DD00DC6025 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AABE497A09FF9CD000A6A239 /* AppController.h */,
+				AABE497B09FF9CD000A6A239 /* AppController.m */,
+				C6C2A9C321DA0713004C5998 /* Touch Bar Support */,
+				7761C89B139BDF12000FB3AB /* ShortcutRecorder */,
+				7761C896139BDEC4000FB3AB /* UKPrefsPanel */,
+				7761C889139BDEAF000FB3AB /* UI */,
+				7761C880139BDE94000FB3AB /* LoginItem */,
+				7761C877139BDE7F000FB3AB /* FlycutEngine */,
+				77A4F3A4139BD72300F39666 /* SGHotKeysLib */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAFAC84A0A1BD9DD00DC6025 /* Carbon.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6C2A9BD21D9F877004C5998 /* DFRFoundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Flycut.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Jumpcut */ = {
+			isa = PBXGroup;
+			children = (
+				7794D3D4139BF28B0047E862 /* flycut.icns */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Jumpcut;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Flycut_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7794D3D6139BF2B10047E862 /* flycut.icns */,
+				7761C8CD139BE06B000FB3AB /* com.generalarcade.flycut.16.png */,
+				7761C8CE139BE06B000FB3AB /* com.generalarcade.flycut.32.png */,
+				8D2E28821B0669F500AE62C8 /* com.generalarcade.flycut.black.16.png */,
+				8D2E28831B0669F500AE62C8 /* com.generalarcade.flycut.black.32.png */,
+				8D2E28841B0669F500AE62C8 /* com.generalarcade.flycut.xout.16.png */,
+				8D2E28851B0669F500AE62C8 /* com.generalarcade.flycut.xout.32.png */,
+				7761C8D1139BE06B000FB3AB /* jumpcut.icns */,
+				7761C8EB139BE09D000FB3AB /* Info.plist */,
+				7761C8D2139BE06B000FB3AB /* net.sf.jumpcut.ghost_scissors_small.png */,
+				7761C8D3139BE06B000FB3AB /* net.sf.jumpcut.preferences.acknowledgements.tiff */,
+				7761C8D4139BE06B000FB3AB /* net.sf.jumpcut.preferences.appearance.tiff */,
+				7761C8D5139BE06B000FB3AB /* net.sf.jumpcut.preferences.general.tiff */,
+				7761C8D6139BE06B000FB3AB /* net.sf.jumpcut.preferences.hotkey.tiff */,
+				7761C8D7139BE06B000FB3AB /* net.sf.jumpcut.scissors_bw16.png */,
+				7761C8D8139BE06B000FB3AB /* RemoveShortcut.tif */,
+				7761C8D9139BE06B000FB3AB /* RemoveShortcutPressed.tif */,
+				7761C8DA139BE06B000FB3AB /* RemoveShortcutRollover.tif */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7761C877139BDE7F000FB3AB /* FlycutEngine */ = {
+			isa = PBXGroup;
+			children = (
+				77DA6B8E1CB9549B0077917F /* FlycutStore.m */,
+				77DA6B8F1CB9549B0077917F /* FlycutStore.h */,
+				77DA6B901CB9549B0077917F /* FlycutClipping.m */,
+				77DA6B911CB9549B0077917F /* FlycutClipping.h */,
+			);
+			name = FlycutEngine;
+			path = JumpcutEngine;
+			sourceTree = "<group>";
+		};
+		7761C880139BDE94000FB3AB /* LoginItem */ = {
+			isa = PBXGroup;
+			children = (
+				7761C881139BDE94000FB3AB /* LoginItemsAE.c */,
+				7761C882139BDE94000FB3AB /* LoginItemsAE.h */,
+				7761C883139BDE94000FB3AB /* UKLoginItemRegistry.h */,
+				7761C884139BDE94000FB3AB /* UKLoginItemRegistry.m */,
+			);
+			path = LoginItem;
+			sourceTree = "<group>";
+		};
+		7761C889139BDEAF000FB3AB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7761C88A139BDEAF000FB3AB /* BezelWindow.h */,
+				7761C88B139BDEAF000FB3AB /* BezelWindow.m */,
+				7761C88C139BDEAF000FB3AB /* RoundRecBezierPath.h */,
+				7761C88D139BDEAF000FB3AB /* RoundRecBezierPath.m */,
+				7761C88E139BDEAF000FB3AB /* RoundRecTextField.h */,
+				7761C88F139BDEAF000FB3AB /* RoundRecTextField.m */,
+				773ABFAF13E9AA1A00AE3969 /* NSWindow+TrueCenter.h */,
+				773ABFB013E9AA1A00AE3969 /* NSWindow+TrueCenter.m */,
+				DBEB0C9A1442F2AE0080D24E /* NSWindow+ULIZoomEffect.h */,
+				DBEB0C9B1442F2AE0080D24E /* NSWindow+ULIZoomEffect.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7761C896139BDEC4000FB3AB /* UKPrefsPanel */ = {
+			isa = PBXGroup;
+			children = (
+				7761C897139BDEC4000FB3AB /* UKPrefsPanel.h */,
+				7761C898139BDEC4000FB3AB /* UKPrefsPanel.m */,
+			);
+			path = UKPrefsPanel;
+			sourceTree = "<group>";
+		};
+		7761C89B139BDF12000FB3AB /* ShortcutRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				7761C89E139BDF12000FB3AB /* SRCommon.h */,
+				7761C89F139BDF12000FB3AB /* SRCommon.m */,
+				7761C8A0139BDF12000FB3AB /* SRKeyCodeTransformer.h */,
+				7761C8A1139BDF12000FB3AB /* SRKeyCodeTransformer.m */,
+				7761C8A2139BDF12000FB3AB /* SRRecorderCell.h */,
+				7761C8A3139BDF12000FB3AB /* SRRecorderCell.m */,
+				7761C8A4139BDF12000FB3AB /* SRRecorderControl.h */,
+				7761C8A5139BDF12000FB3AB /* SRRecorderControl.m */,
+				7761C8A6139BDF12000FB3AB /* SRValidator.h */,
+				7761C8A7139BDF12000FB3AB /* SRValidator.m */,
+			);
+			path = ShortcutRecorder;
+			sourceTree = "<group>";
+		};
+		77A4F3A4139BD72300F39666 /* SGHotKeysLib */ = {
+			isa = PBXGroup;
+			children = (
+				77A4F3A5139BD72300F39666 /* SGHotKey.h */,
+				77A4F3A6139BD72300F39666 /* SGHotKey.m */,
+				77A4F3A7139BD72300F39666 /* SGHotKeyCenter.h */,
+				77A4F3A8139BD72300F39666 /* SGHotKeyCenter.m */,
+				77A4F3A9139BD72300F39666 /* SGKeyCodeTranslator.h */,
+				77A4F3AA139BD72300F39666 /* SGKeyCodeTranslator.m */,
+				77A4F3AB139BD72300F39666 /* SGKeyCombo.h */,
+				77A4F3AC139BD72300F39666 /* SGKeyCombo.m */,
+			);
+			path = SGHotKeysLib;
+			sourceTree = "<group>";
+		};
+		C6C2A9BB21D9F71F004C5998 /* TouchBaer Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C6C2A9B521D9F707004C5998 /* TouchBar.h */,
+				C6C2A9B721D9F71A004C5998 /* LICENSE-TouchBaer */,
+				C6C2A9BC21D9F720004C5998 /* README-TouchBaer.md */,
+			);
+			path = "TouchBaer Helper";
+			sourceTree = "<group>";
+		};
+		C6C2A9C321DA0713004C5998 /* Touch Bar Support */ = {
+			isa = PBXGroup;
+			children = (
+				C6C2A9C421DA0743004C5998 /* LICENSE-chrisgalz */,
+				C6C2A9B121D9F679004C5998 /* TouchBarController.h */,
+				C6C2A9B221D9F679004C5998 /* TouchBarController.m */,
+				C6C2A9BF21D9FFA1004C5998 /* NSButton+Property.h */,
+				C6C2A9C021D9FFA1004C5998 /* NSButton+Property.m */,
+				C6C2A9BB21D9F71F004C5998 /* TouchBaer Helper */,
+			);
+			path = "Touch Bar Support";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AAE2036C0A27B2B9002DCC2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A4F3AD139BD72300F39666 /* SGHotKey.h in Headers */,
+				77A4F3AF139BD72300F39666 /* SGHotKeyCenter.h in Headers */,
+				77A4F3B1139BD72300F39666 /* SGKeyCodeTranslator.h in Headers */,
+				77A4F3B3139BD72300F39666 /* SGKeyCombo.h in Headers */,
+				7761C886139BDE94000FB3AB /* LoginItemsAE.h in Headers */,
+				C6C2A9B621D9F707004C5998 /* TouchBar.h in Headers */,
+				7761C887139BDE94000FB3AB /* UKLoginItemRegistry.h in Headers */,
+				7761C890139BDEAF000FB3AB /* BezelWindow.h in Headers */,
+				7761C892139BDEAF000FB3AB /* RoundRecBezierPath.h in Headers */,
+				7761C894139BDEAF000FB3AB /* RoundRecTextField.h in Headers */,
+				7761C899139BDEC4000FB3AB /* UKPrefsPanel.h in Headers */,
+				C6C2A9C121D9FFA2004C5998 /* NSButton+Property.h in Headers */,
+				7761C8AA139BDF12000FB3AB /* SRCommon.h in Headers */,
+				7761C8AC139BDF12000FB3AB /* SRKeyCodeTransformer.h in Headers */,
+				77DA6B951CB9549B0077917F /* FlycutClipping.h in Headers */,
+				7761C8AE139BDF12000FB3AB /* SRRecorderCell.h in Headers */,
+				7761C8B0139BDF12000FB3AB /* SRRecorderControl.h in Headers */,
+				7761C8B2139BDF12000FB3AB /* SRValidator.h in Headers */,
+				77DA6B931CB9549B0077917F /* FlycutStore.h in Headers */,
+				773ABFB113E9AA1A00AE3969 /* NSWindow+TrueCenter.h in Headers */,
+				C6C2A9B321D9F679004C5998 /* TouchBarController.h in Headers */,
+				DBEB0C9C1442F2AE0080D24E /* NSWindow+ULIZoomEffect.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Flycut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Flycut" */;
+			buildPhases = (
+				8D60A1BA1BC8399900A26CBF /* ShellScript */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				AAE2036C0A27B2B9002DCC2A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flycut;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Jumpcut;
+			productReference = 8D1107320486CEB800E47090 /* Flycut.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					8D1107260486CEB800E47090 = {
+						DevelopmentTeam = 9SK76T3X96;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Flycut" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Jumpcut */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Flycut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				7761C8DB139BE06B000FB3AB /* com.generalarcade.flycut.16.png in Resources */,
+				C6C2A9C521DA0743004C5998 /* LICENSE-chrisgalz in Resources */,
+				7761C8DC139BE06B000FB3AB /* com.generalarcade.flycut.32.png in Resources */,
+				7761C8DF139BE06B000FB3AB /* jumpcut.icns in Resources */,
+				8D2E28891B0669F500AE62C8 /* com.generalarcade.flycut.xout.32.png in Resources */,
+				7761C8E0139BE06B000FB3AB /* net.sf.jumpcut.ghost_scissors_small.png in Resources */,
+				7761C8E1139BE06B000FB3AB /* net.sf.jumpcut.preferences.acknowledgements.tiff in Resources */,
+				8D2E28871B0669F500AE62C8 /* com.generalarcade.flycut.black.32.png in Resources */,
+				7761C8E2139BE06B000FB3AB /* net.sf.jumpcut.preferences.appearance.tiff in Resources */,
+				7761C8E3139BE06B000FB3AB /* net.sf.jumpcut.preferences.general.tiff in Resources */,
+				8D2E28881B0669F500AE62C8 /* com.generalarcade.flycut.xout.16.png in Resources */,
+				C6C2A9B921D9F71B004C5998 /* LICENSE-TouchBaer in Resources */,
+				7761C8E4139BE06B000FB3AB /* net.sf.jumpcut.preferences.hotkey.tiff in Resources */,
+				7761C8E5139BE06B000FB3AB /* net.sf.jumpcut.scissors_bw16.png in Resources */,
+				8D2E28861B0669F500AE62C8 /* com.generalarcade.flycut.black.16.png in Resources */,
+				7761C8E6139BE06B000FB3AB /* RemoveShortcut.tif in Resources */,
+				7761C8E7139BE06B000FB3AB /* RemoveShortcutPressed.tif in Resources */,
+				7761C8E8139BE06B000FB3AB /* RemoveShortcutRollover.tif in Resources */,
+				7794D3D5139BF28B0047E862 /* flycut.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D60A1BA1BC8399900A26CBF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the build number to identify, to some extent, the git version of the code.\n# Combines the hash of the origin commit, number of commits of divergence, local HEAD commit, local uncommitted lines of change, and year/month of build.\n# Eliminates all except for the origin commit if there are no local changes, since that can be easily tracked.\n# e.g. 1.b690b47.1.1.cb73ce6.35.1510 from origin b690b47, one and one different, locally at commit cb73ce6, with a further 35 lines of change, built in 2015 in the tenth month.  Day numbers are excluded for brevity, as there is already much uncertainty in the local changes and this field is only to indicate a rough level of freshness.  Build numer starts with \"1.\" to avoid strange compile errors.\ncd \"${SOURCE_ROOT}\"\nORIGIN=$(git rev-parse --short remotes/origin/master)\nOFFSET=\".$(git status|sed -n '1,/^# *$/ p'|grep \"[0-9]\"|head -1|sed 's/^[^0-9]*//;s/[^0-9]*$//'|sed 's/[^0-9][^0-9]*/./')\"\nLOCAL=\".$(git rev-parse --short HEAD)\"\nUNCOMMITTED=\".$(git diff -b -w HEAD|grep \"^[+\\-]\"|grep -v \"^[+\\-][+\\-][+\\-] [ab]\"|wc -l|sed 's/[^0-9]//g')\"\nBUILD_YEAR_MONTH=\".$(date +\"%y%m\")\"\nif [ \".$ORIGIN\" == \"$LOCAL\" ]\nthen\n    OFFSET=\"\"\n    LOCAL=\"\"\n    if [ \".0\" == \"$UNCOMMITTED\" ]\n    then\n        UNCOMMITTED=\"\"\n        BUILD_YEAR_MONTH=\"\"\n    fi\nfi\nNEWVERSIONSTRING=\"1.$ORIGIN$OFFSET$LOCAL$UNCOMMITTED$BUILD_YEAR_MONTH\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $NEWVERSIONSTRING\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				AABE497C09FF9CD000A6A239 /* AppController.m in Sources */,
+				77A4F3AE139BD72300F39666 /* SGHotKey.m in Sources */,
+				77A4F3B0139BD72300F39666 /* SGHotKeyCenter.m in Sources */,
+				77A4F3B2139BD72300F39666 /* SGKeyCodeTranslator.m in Sources */,
+				C6C2A9B421D9F679004C5998 /* TouchBarController.m in Sources */,
+				77A4F3B4139BD72300F39666 /* SGKeyCombo.m in Sources */,
+				7761C885139BDE94000FB3AB /* LoginItemsAE.c in Sources */,
+				C6C2A9C221D9FFA2004C5998 /* NSButton+Property.m in Sources */,
+				7761C888139BDE94000FB3AB /* UKLoginItemRegistry.m in Sources */,
+				7761C891139BDEAF000FB3AB /* BezelWindow.m in Sources */,
+				7761C893139BDEAF000FB3AB /* RoundRecBezierPath.m in Sources */,
+				7761C895139BDEAF000FB3AB /* RoundRecTextField.m in Sources */,
+				7761C89A139BDEC4000FB3AB /* UKPrefsPanel.m in Sources */,
+				7761C8AB139BDF12000FB3AB /* SRCommon.m in Sources */,
+				77DA6B941CB9549B0077917F /* FlycutClipping.m in Sources */,
+				7761C8AD139BDF12000FB3AB /* SRKeyCodeTransformer.m in Sources */,
+				7761C8AF139BDF12000FB3AB /* SRRecorderCell.m in Sources */,
+				7761C8B1139BDF12000FB3AB /* SRRecorderControl.m in Sources */,
+				77DA6B921CB9549B0077917F /* FlycutStore.m in Sources */,
+				7761C8B3139BDF12000FB3AB /* SRValidator.m in Sources */,
+				773ABFB213E9AA1A00AE3969 /* NSWindow+TrueCenter.m in Sources */,
+				DBEB0C9D1442F2AE0080D24E /* NSWindow+ULIZoomEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 9SK76T3X96;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Flycut_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = Flycut;
+				PROVISIONING_PROFILE = "3abf5364-dfb4-4792-a5a0-377a74572bcb";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9SK76T3X96;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Flycut_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = Flycut;
+				PROVISIONING_PROFILE = "3abf5364-dfb4-4792-a5a0-377a74572bcb";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Flycut;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Flycut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Flycut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
