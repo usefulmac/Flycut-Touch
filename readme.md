@@ -7,6 +7,8 @@ Flycut Touch
 
 Touch Bar support added to Flycut
 
+Download the app here (349kb) [FlycutTouch.app](https://playr.app/downloads/FlycutTouch.zip)
+
 by [chrisgalz](https://github.com/chrisgalz)
 
 [Video Demo Link](https://drive.google.com/file/d/1V648N-AH6ntL3hQF2wqBf_fOp1At4xQy/view?usp=sharing)
