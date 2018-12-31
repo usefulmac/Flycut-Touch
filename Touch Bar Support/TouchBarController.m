@@ -11,6 +11,7 @@
 #import "NSButton+Property.h"
 
 static const NSTouchBarItemIdentifier kjumpCutIdentifier = @"com.jumpcut.jumpcut";
+static const NSTouchBarItemIdentifier kClipItemIdentifier = @"com.jumpcut.clipItem";
 
 @interface TouchBarController () <NSTouchBarDelegate>
 
@@ -31,8 +32,67 @@ static const NSTouchBarItemIdentifier kjumpCutIdentifier = @"com.jumpcut.jumpcut
         item.view = [NSButton buttonWithTitle:@"✂" target:self action:@selector(expandBar:)];
         [NSTouchBarItem addSystemTrayItem:item];
         DFRElementSetControlStripPresenceForIdentifier(kjumpCutIdentifier, YES);
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clipboardUpdated) name:@"ClipboardUpdatedTouchBar" object:nil];
     }
     return self;
+}
+
+- (void)clipboardUpdated {
+    NSLog(@"clipboardUpdated");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (@available(macOS 10.14, *)) {
+            [NSTouchBar dismissSystemModalTouchBar:self.touchBar];
+        }
+        else {
+            [NSTouchBar dismissSystemModalFunctionBar:self.touchBar];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self expandBar:nil];
+        });
+    });
+    
+    
+}
+
+- (NSCustomTouchBarItem*)pasteboardItem {
+    //https://stackoverflow.com/questions/42123495/touch-bar-how-to-add-a-scrollable-list-of-buttons
+    
+    NSScrollView *scrollView = [[NSScrollView alloc] initWithFrame:CGRectMake(0, 0, 400, 30)];
+    
+    NSMutableDictionary *constraintViews = [NSMutableDictionary dictionary];
+    NSView *documentView = [[NSView alloc] initWithFrame:NSZeroRect];
+    
+    NSString *layoutFormat = @"H:|-8-";
+    NSSize size = NSMakeSize(8, 30);
+    
+    for (int i = 0; i < [self clipboardItems].count; i++) {
+        NSString *objectName = [NSString stringWithFormat:@"view%d", i];
+        NSButton *button = [NSButton buttonWithTitle:[self shorten:[self clipboardItems][i]] target:self action:@selector(pasteItemFromTouchIndex:)];
+        button.property = [NSNumber numberWithInt:i];
+        button.translatesAutoresizingMaskIntoConstraints = NO;
+        [documentView addSubview:button];
+        
+        // Constraint information
+        layoutFormat = [layoutFormat stringByAppendingString:[NSString stringWithFormat:@"[%@]-8-", objectName]];
+        [constraintViews setObject:button forKey:objectName];
+        size.width += 8 + button.intrinsicContentSize.width;
+    }
+    
+    layoutFormat = [layoutFormat stringByAppendingString:[NSString stringWithFormat:@"|"]];
+    
+    NSArray *hConstraints = [NSLayoutConstraint constraintsWithVisualFormat:layoutFormat
+                                                                    options:NSLayoutFormatAlignAllCenterY
+                                                                    metrics:nil
+                                                                      views:constraintViews];
+    
+    [documentView setFrame:NSMakeRect(0, 0, size.width, size.height)];
+    [NSLayoutConstraint activateConstraints:hConstraints];
+    scrollView.documentView = documentView;
+    
+    NSCustomTouchBarItem *item = [[NSCustomTouchBarItem alloc] initWithIdentifier:kClipItemIdentifier];
+    item.view = scrollView;
+    
+    return item;
 }
 
 - (NSTouchBar *)touchBar {
@@ -56,11 +116,7 @@ static const NSTouchBarItemIdentifier kjumpCutIdentifier = @"com.jumpcut.jumpcut
 }
 
 - (NSArray*)itemIdentifiersForClipboard {
-    NSMutableArray *itemIdentifiers = [NSMutableArray new];
-    for (int i = 0; i < [self clipboardItems].count; i++) {
-        [itemIdentifiers addObject:[NSString stringWithFormat:@"com.jumpcut.clipItem%d", i]];
-    }
-    return itemIdentifiers;
+    return @[kClipItemIdentifier];
 }
 
 - (void)expandBar:(id)sender {
@@ -79,13 +135,12 @@ static const NSTouchBarItemIdentifier kjumpCutIdentifier = @"com.jumpcut.jumpcut
         NSCustomTouchBarItem *jumpcutButton = [[NSCustomTouchBarItem alloc] initWithIdentifier:kjumpCutIdentifier];
         jumpcutButton.view = [NSButton buttonWithTitle:@"✂" target:self action:@selector(expandBar:)];
         return jumpcutButton;
-    } else {
-        int index = [[identifier substringFromIndex:identifier.length-1] integerValue];
-        NSCustomTouchBarItem *item = [[NSCustomTouchBarItem alloc] initWithIdentifier:[NSString stringWithFormat:@"com.jumpcut.clipItem%d", index]];
-        NSButton *button = [NSButton buttonWithTitle:[self shorten:[self clipboardItems][index]] target:self action:@selector(pasteItemFromTouchIndex:)];
-        button.property = [NSNumber numberWithInt:index];
-        item.view = button;
-        return item;
+    }
+    else if ([identifier isEqualToString:kClipItemIdentifier]) {
+        return [self pasteboardItem];
+    }
+    else {
+        return nil;
     }
 }
 
@@ -98,7 +153,6 @@ static const NSTouchBarItemIdentifier kjumpCutIdentifier = @"com.jumpcut.jumpcut
 
 - (void)pasteItemFromTouchIndex:(NSButton*)button {
     int index = button.property.intValue;
-    NSString *pasteboardItem = [self clipboardItems][index];
     [controller pasteIndexTouch:index];
 }
 

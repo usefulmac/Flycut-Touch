@@ -64,6 +64,11 @@
 	while ( [jcList count] > jcRememberNum ) {
 		[jcList removeObjectAtIndex:jcRememberNum];
 	}
+    [self notifyTouchBarUpdate];
+}
+
+- (void)notifyTouchBarUpdate {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ClipboardUpdatedTouchBar" object:nil];
 }
 
 -(void) addClipping:(NSString *)clipping ofType:(NSString *)type withPBCount:(int *)pbCount
@@ -77,6 +82,7 @@
     emptyJCList = [[NSMutableArray alloc] init];
     [jcList release];
     jcList = emptyJCList;
+    [self notifyTouchBarUpdate];
 }
 
 -(void) mergeList {
@@ -87,6 +93,7 @@
 -(void) clearItem:(int)index
 {
     [jcList removeObjectAtIndex:index];
+    [self notifyTouchBarUpdate];
 }
 
 -(void) clippingMoveToTop:(int)index
