@@ -8,6 +8,8 @@ Flycut Touch is an extension/branch upon [Flycut](https://github.com/TermiT/Flyc
 ••••••••••••••••••••••••••••••••••••••••••••••••••••
 ### App Details
 
+Tested on macOS 10.14
+
 Touch Bar support added to Flycut
 
 Download the app here (349kb) [FlycutTouch.app](https://playr.app/downloads/FlycutTouch.zip)
