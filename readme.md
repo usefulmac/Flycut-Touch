@@ -1,9 +1,12 @@
-### Flycut Touch
+## Flycut Touch
+
+### Summary
+Every time you copy something in the macOS system clipboard, your pasteboard history is available directly in in the system-wide touch bar for quick pasting.
 
 Flycut Touch is an extension/branch upon [Flycut](https://github.com/TermiT/Flycut), which is a clean and simple clipboard manager for developers. Flycut is based on an open source app called Jumpcut.
 
 ••••••••••••••••••••••••••••••••••••••••••••••••••••
-Flycut Touch
+### App Details
 
 Touch Bar support added to Flycut
 
