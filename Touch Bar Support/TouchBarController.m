@@ -145,7 +145,7 @@ static const NSTouchBarItemIdentifier kClipItemIdentifier = @"com.jumpcut.clipIt
 }
 
 - (NSString*)shorten:(NSString*)string {
-    NSRange stringRange = {0, MIN([string length], 20)};
+    NSRange stringRange = {0, MIN([string length], 30)};
     stringRange = [string rangeOfComposedCharacterSequencesForRange:stringRange];
     NSString *shortString = [string substringWithRange:stringRange];
     return shortString;
